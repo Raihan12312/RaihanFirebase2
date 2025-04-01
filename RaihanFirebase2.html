@@ -24,7 +24,7 @@ body {
 }
 div {
   height: 300px;
-  background-size: cover;
+  background-size: 100% 100%;
   position: relative;
   margin: 40px 0 0 0;
   border-radius: 12px;
@@ -84,6 +84,11 @@ small {
   font-family: "Ribeye Marrow";
   background-image: url("https://reciperahasya.com/wp-content/uploads/2024/09/Bengali-Sweet-Rasgulla-Recipe.jpg");
 }
+.SideDish{
+  font-family: "Ribeye Marrow";
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREV5a-4fECSu9tijbd8Ff5X-qwsQJ8neewHFPzDUi8noH8pd06PlrIUZgsois238_9izU&usqp=CAU");
+}
+
 .price {
   float: right;
   font-family: "Finger Paint";
@@ -142,6 +147,13 @@ small {
 Fresh, bright, milky; stuffed with pistachio, almonds, and raisins, cooked in saffron flavoured light sugar syrup. One mouthful bite allures to next one, complete satisfaction.</small></p>
 </div>
 
+<div class="SideDish">
+<input type="number" min="0" style="width: 50px"class="quantities">
+  <p>Sandesh<span class="price">$5.99</span><br />
+  <small> It is typically served as a dessert and consists of fresh paneer, sugar, and flavorings such as cardamom and saffron. The small paneer balls are typically garnished with pistachios, almonds, or crushed pineapple.</small></p>
+</div>
+
+
 
 <input id="Name" placeholder="Your name">
 <br><br> 
@@ -187,7 +199,7 @@ Fresh, bright, milky; stuffed with pistachio, almonds, and raisins, cooked in sa
   const Name = document.querySelector("#Name") 
   const Email = document.querySelector("#Email")
     const quantities = document.querySelectorAll(".quantities") 
-  const itemsList = ["Lasooni", "Biryani", "Mishti"]
+  const itemsList = ["Lasooni", "Biryani", "Mishti", "Sandesh"]
     const prices = document.querySelectorAll(".price") 
   
   document.querySelector('#submit').addEventListener('click', Submit)
